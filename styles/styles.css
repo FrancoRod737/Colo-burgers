@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+header img{
+    width: 10%;
+}
+header{
+background-color: #f18639;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+padding: 0 10px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+nav ul li{
+    margin-left: 105px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+}
+footer {
+    background-color: #502314;
+    color:  #f18639;
+    padding: 50px 30px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.divfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+p{
+    font-family: "Winky Sans", sans-serif;
+}
+.divfooter img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+}
+/* PRODUCTOS CSS*/  
+.menuhamburguesas,
+.menuacompañantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.menuhamburguesas h2,
+.menuacompañantes h2 {
+    grid-column: 1 / -1;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: #502314;
+    margin-bottom: 10px;
+}
+
+.menuhamburguesas article,
+.menuacompañantes article {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 320px;
+
+}
+
+.menuhamburguesas img,
+.menuacompañantes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 3px solid #f18639;
+}
+
+.menuhamburguesas p,
+.menuacompañantes p {
+    font-family: "Winky Sans", sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    padding: 15px;
+}
+
+.menuhamburguesas button,
+.menuacompañantes button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #f18639;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+}
+
+.menuhamburguesas button:hover,
+.menuacompañantes button:hover {
+    background-color: #e06f1f;
+}
+/* CONTACTO CSS */
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*INICIO CSS*/
+.inicioburger,
+.inicioburger2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: #fffaf4;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.inicioburger2 {
+    flex-direction: row-reverse;
+}
+
+.inicioburger img,
+.inicioburger2 img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+.texto button {
+    padding: 10px 20px;
+    background-color: #f18639;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+}
+
+.texto button:hover {
+    background-color: #e06f1f;
+}
+
+@media (max-width: 768px) {
+    .inicioburger,
+    .inicioburger2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicioburger2 {
+        flex-direction: column;
+    }
+
+    .inicioburger img,
+    .inicioburger2 img {
+        max-width: 100%;
+    }
+}
+/* NOSOTROS CSS */
+.nosotros,
+.nosotros2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: #fffaf4;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.nosotros2 {
+    flex-direction: row-reverse;
+}
+
+.nosotros img,
+.nosotros2 img {max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.nosotros p,
+.nosotros2 p {
+    font-family: "Winky Sans", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #502314;
+    flex: 1;
+    min-width: 280px;
+}
+
+main h1 {
+    font-family: "Oswald", sans-serif;
+    color: #502314;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+@media (max-width: 768px) {
+    .nosotros,
+    .nosotros2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros2 {
+        flex-direction: column;
+    }
+
+    .nosotros img,
+    .nosotros2 img {
+        max-width: 100%;
+    }
+}
+
+/*LOCALES*/
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    background-color: #f18639;
+    color: #502314;
+
+}
+
+select:hover,
+select:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.2);
+}
