@@ -1,6 +1,10 @@
+@import "variables";
+@import "mixinsextends";
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 header img{
     width: 10%;
 }
@@ -70,7 +74,6 @@ p{
     text-align: center;
     margin: 40px 20px;
 }
-
 .menuhamburguesas h2,
 .menuacompañantes h2 {
     grid-column: 1 / -1;
@@ -79,35 +82,7 @@ p{
     color: #502314;
     margin-bottom: 10px;
 }
-
-.menuhamburguesas article,
-.menuacompañantes article {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 320px;
-
-}
-
-.menuhamburguesas img,
-.menuacompañantes img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 3px solid #f18639;
-}
-
-.menuhamburguesas p,
-.menuacompañantes p {
-    font-family: "Winky Sans", sans-serif;
-    font-size: 0.95rem;
-    color: #333;
-    padding: 15px;
-}
-
-.menuhamburguesas button,
-.menuacompañantes button {
+.button {
     margin-bottom: 15px;
     padding: 10px 20px;
     background-color: #f18639;
@@ -334,7 +309,7 @@ select:focus {
       padding: 0 15px;
     }
   
-    /* NOSOTROS & INICIO */
+    /* NOSOTROS  INICIO */
     .nosotros,
     .nosotros2,
     .inicioburger,
@@ -356,5 +331,3 @@ select:focus {
       height: 300px;
     }
   }
-  
-  

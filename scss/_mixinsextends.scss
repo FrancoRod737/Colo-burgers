@@ -1,0 +1,10 @@
+%flexrowcenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin texto($tipografia, $tamanio, $decoracion){
+    font-family:$tipografia;
+    font-size:$tamanio;
+    text-decoration:$decoracion;
+}
