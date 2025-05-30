@@ -1,0 +1,41 @@
+/* NOSOTROS CSS */
+.nosotros,
+.nosotros2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: #fffaf4;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.nosotros2 {
+    flex-direction: row-reverse;
+}
+
+.nosotros img,
+.nosotros2 img {max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.nosotros p,
+.nosotros2 p {
+    font-family: "Winky Sans", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #502314;
+    flex: 1;
+    min-width: 280px;
+}
+
+main h1 {
+    font-family: "Oswald", sans-serif;
+    color: #502314;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+

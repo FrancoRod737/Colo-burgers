@@ -1,0 +1,54 @@
+/*INICIO CSS*/
+.inicioburger,
+.inicioburger2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: #fffaf4;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.inicioburger2 {
+    flex-direction: row-reverse;
+}
+
+.inicioburger img,
+.inicioburger2 img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+.texto button {
+    padding: 10px 20px;
+    background-color: #f18639;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+}
+
+.texto button:hover {
+    background-color: #e06f1f;
+}
+
+@media (max-width: 768px) {
+    .inicioburger,
+    .inicioburger2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicioburger2 {
+        flex-direction: column;
+    }
+
+    .inicioburger img,
+    .inicioburger2 img {
+        max-width: 100%;
+    }
+}
